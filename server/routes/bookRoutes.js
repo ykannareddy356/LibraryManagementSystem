@@ -4,6 +4,13 @@ const { createBook,  getAllBooks, getBookById, updateBook, deleteBook} = require
 
 const router = express.Router();
 
+//test route to check if book routes are working
+router.get("/test", (req, res) => {
+  res.json({
+    success: true,
+    message: "Book routes are working",
+  });
+});
 // POST /api/books
 router.post("/", createBook);
 
