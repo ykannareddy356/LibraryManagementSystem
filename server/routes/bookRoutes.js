@@ -1,4 +1,5 @@
 const express = require("express");
+console.log("✅ bookRoutes.js loaded");
 const { createBook,  getAllBooks, getBookById, updateBook, deleteBook} = require("../controllers/bookController");
 
 const router = express.Router();
